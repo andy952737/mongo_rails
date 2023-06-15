@@ -1,2 +1,19 @@
-<h1>Mains#index</h1>
-<p>Find me in app/views/mains/index.html.erb</p>
+<h1>Mongo DB test CRUD</h1>
+<p></p>
+
+<%= form_tag(mains_path,multipart: true, method: :post,class: 'form-horizontal') do %> 	
+	<label for="tt">文字1</label>
+    <input style="display:block;" id="tt" type="text" name="post[title]" >
+    <label for="tt">文字2</label>
+    <textarea style="display:block;" id="tt" name="post[contact]"></textarea>
+    <input style="display:block;" type="submit" class="" value="送出">
+<% end %>
+
+<hr>
+<% if false %>
+<% @index_Posts.each do |post| %>
+ <%= post.id %>
+ <%= post.title %>
+ <%= post.contact %>
+<% end %>
+<% end %>
