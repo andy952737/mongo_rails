@@ -9,3 +9,14 @@ gem 'mongoid'
 ```
 rails g mongoid:config
 ```
+
+# mongo
+```
+
+show dbs
+use mydb
+db
+db.movie.insert({"name":"tutorials point"})
+db.dropDatabase()
+
+```
